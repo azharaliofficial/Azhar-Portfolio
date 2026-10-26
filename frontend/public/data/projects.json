@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "restaurant-management-system",
+    "code": "CASE 01",
+    "tag": "CODEALPHA INTERNSHIP",
+    "title": "Restaurant Management System",
+    "problem": "A restaurant needs one place to take orders, manage tables and reservations, and keep track of stock.",
+    "built_with": "Python, Django and Django REST Framework with SQLite. A REST API plus a simple web page for orders, tables and reports.",
+    "result": "Working system: place orders (with stock checks), reserve tables without time clashes, track order status and see daily sales and low-stock reports.",
+    "case_study": "This was my first backend project at CodeAlpha. The goal was a small restaurant system that handles the daily work: orders, tables, reservations and stock.\n\nHow it works: a customer or waiter picks items from the menu and places an order for a table or takeaway. Before the order is saved, the system checks that there is enough stock of every ingredient. If one is short, the order is refused with a clear message. When the order is saved, the ingredients are taken from stock. If the order is cancelled, the stock is put back.\n\nTables can be reserved for a time slot. A reservation lasts two hours, and the system refuses a second reservation for the same table in an overlapping time, so double booking is not possible. Order status moves from pending to preparing, served and paid, and the table is freed when the order is paid or cancelled.\n\nThere is also a daily sales report and a low-stock report, and the Django admin is used to manage the menu, ingredients and inventory.\n\nWhat I learned: designing related tables, doing multi-step changes safely with database transactions, and building a REST API with validation.",
+    "github_url": "https://github.com/azharaliofficial",
+    "demo_url": "https://lnkd.in/p/dbhiz2qK",
+    "cover_url": "/storage/projects/NFhD8s8DknYiinatTaWTupzXOyPg0T5X2Wm77Oyu.png",
+    "gallery": [
+      "/storage/projects/gallery/QKkZ1xNAy8gXamEQo1hQJL96qojeucJweQzYdPjN.png",
+      "/storage/projects/gallery/CCKcsCswZvEigQ0jw1ncQa8xalCw1nsLmCNYL9qk.png",
+      "/storage/projects/gallery/lDZevTD8XxdY0UjnEdyghyFwgMpbGsVdQwYmhAUq.png",
+      "/storage/projects/gallery/zM0B5pPlypq2piQ5uAeWQqspwao268eZinDl8QL0.png"
+    ]
+  },
+  {
+    "slug": "event-registration",
+    "code": "CASE 02",
+    "tag": "CODEALPHA INTERNSHIP",
+    "title": "Event Registration",
+    "problem": "People need a simple way to see upcoming events, sign up for a seat and cancel, while organisers need to avoid overbooking.",
+    "built_with": "Python, Django and Django REST Framework with SQLite. Token login, a REST API and a simple web page.",
+    "result": "Working app: sign up and log in, browse events, register for a seat, see seats left and cancel. Full events and duplicate sign-ups are blocked.",
+    "case_study": "Event Registration is a small web app where users sign up, log in and register for events. Organisers add events (title, date, location, capacity) in the Django admin and can see who registered.\n\nHow it works: a user creates an account and gets a login token. The events page shows each event with its seats left. When the user registers, the app checks two things: the user is not already registered, and the event is not full. The check and the save happen inside one database transaction with a row lock, so two people cannot take the last seat at the same time.\n\nA user can see their own registrations and cancel them. They can only cancel their own. If someone cancels and later registers again, the old registration is re-activated instead of creating a duplicate.\n\nWhat I learned: token authentication in Django REST Framework, database transactions and locking, and keeping the data rules (one registration per user per event) in the database itself.",
+    "github_url": "https://github.com/azharaliofficial",
+    "demo_url": "https://lnkd.in/p/dCpf5BhR",
+    "cover_url": "/storage/projects/JuneVCGT41bGZY7VZmsWd5W7wMNyrdONuhRpCXyz.png",
+    "gallery": [
+      "/storage/projects/gallery/J2ZdvnSzALPNs9rajf8nkcwihxaeMEIxeUxtQ58a.png"
+    ]
+  },
+  {
+    "slug": "url-shortener",
+    "code": "CASE 03",
+    "tag": "CODEALPHA INTERNSHIP",
+    "title": "URL Shortener",
+    "problem": "Long links are hard to share. A short link is easier to send and remember.",
+    "built_with": "Python, Flask, Flask-SQLAlchemy and SQLite, with a simple web page.",
+    "result": "Working app: paste a long link, get a 6-character short link that redirects to the original. The same link always gets the same short code.",
+    "case_study": "URL Shortener turns a long web address into a short one. You paste a link on the page and the app returns a short link, for example yoursite.com/aB3x9Q.\n\nHow it works: the page sends the link to a small API. The server checks that it is a valid http or https address. If the user forgot the \"https://\" it is added. If the same link was shortened before, the old short code is returned, so the database does not fill with duplicates. Otherwise the app creates a random 6-character code from letters and numbers, checks it is not already used, and saves it. Opening the short link looks up the code and redirects to the original address. Unknown codes return a clear \"not found\" message.\n\nWhat I learned: building a small API with Flask, validating user input, using an ORM, and making sure generated codes are unique.",
+    "github_url": "https://github.com/azharaliofficial",
+    "demo_url": "https://lnkd.in/p/dSXEcA8v",
+    "cover_url": "/storage/projects/4ZEWD1cPVAyhHXpPor5D1ZYtyvbCHpHd358K6GCi.png",
+    "gallery": [
+      "/storage/projects/gallery/KrZN5qC17lhkA5yzNG4NxzrCEWD3fLi6o6kuk9Ya.png"
+    ]
+  },
+  {
+    "slug": "e-shop-dashboard",
+    "code": "CASE 04",
+    "tag": "PERSONAL PROJECT",
+    "title": "E-shop Dashboard",
+    "problem": "A small shop needs to manage products, stock and customer orders, and see sales and profit, without using spreadsheets.",
+    "built_with": "Laravel 12, MySQL, Blade and Tailwind CSS. Login with admin and user roles, product inventory with QR codes, and an orders dashboard.",
+    "result": "Working admin dashboard: add products with photos, track stock, receive customer orders, mark them delivered (stock reduces automatically) and see revenue, profit and top sellers.",
+    "case_study": "E-shop Dashboard is a Laravel web app for running a small online shop. It has two kinds of users. Customers log in, browse the products and place an order with their name, phone and address. Admins manage the shop from a separate dashboard.\n\nFor admins, I built a product form (name, category, cost price, sale price, stock and photo) with validation. Each product gets a QR code. Products can be searched and edited. Deleted products go to a trash first (soft delete), so they can be restored or deleted for good.\n\nOrders arrive as pending. When the admin marks an order delivered, the stock of that product goes down automatically. The dashboard shows revenue and number of orders, net profit, the top three selling products and a monthly sales chart.\n\nLogin is protected: passwords are hashed, the login route is rate limited, and admin pages are blocked for normal users with a middleware.\n\nWhat I learned: structuring a Laravel app with controllers and migrations, role-based access, file uploads, soft deletes and building dashboard queries with joins and sums.",
+    "github_url": "https://github.com/azharaliofficial",
+    "demo_url": "https://lnkd.in/p/dzxRAwun",
+    "cover_url": null,
+    "gallery": []
+  },
+  {
+    "slug": "spotify-web-player-ui-clone",
+    "code": "CASE 05",
+    "tag": "PRACTICE PROJECT",
+    "title": "Spotify Web Player (UI Clone)",
+    "problem": "Practice in building a real-world interface with only HTML and CSS: a music player layout with a sidebar, search bar and scrolling sections.",
+    "built_with": "HTML and CSS only (flexbox, hover effects, custom icons). No JavaScript.",
+    "result": "A static front-end copy of the Spotify web player home page: top bar, library sidebar, and rows for trending songs, popular artists and albums.",
+    "case_study": "This is a front-end practice project where I rebuilt the look of the Spotify web player using only HTML and CSS.\n\nThe page has a top bar with search, links and login buttons, a \"Your Library\" sidebar with a create-playlist card and footer links, and a main area with horizontally arranged rows: Trending Songs, Popular Artists, and Popular albums and singles. Cards have cover images, titles and artist names, and buttons and cards react on hover.\n\nIt is a static design, so nothing plays and there is no login. I made it to practise layout with flexbox, spacing and styling.\n\nWhat I learned: structuring a larger page in HTML, writing CSS for a dark interface, and matching a real design closely.",
+    "github_url": "https://github.com/azharaliofficial/spotify-website-fronted-base.git",
+    "demo_url": "https://lnkd.in/p/dgXn5zBG",
+    "cover_url": "/storage/projects/6ONfGDAJegOEvHji3WiFw5ri8VdhBp7h2J4Qfoju.png",
+    "gallery": [
+      "/storage/projects/gallery/LZBbIF9jFTWu2UsQGl1fjrMLnFNDlDHcqJBTTkET.png"
+    ]
+  }
+]

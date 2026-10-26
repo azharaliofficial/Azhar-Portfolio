@@ -1,0 +1,23 @@
+[
+  {
+    "type": "INTERNSHIP",
+    "role": "Backend Development Intern",
+    "org": "CodeAlpha",
+    "summary": "Built three backend projects: Restaurant Management, Event Registration and URL Shortener.",
+    "image_url": null
+  },
+  {
+    "type": "INTERNSHIP",
+    "role": "Full-Stack Web Development Intern",
+    "org": "Tech Zone Institute",
+    "summary": "One month applying full-stack skills in real project environments after a 3-month program.",
+    "image_url": null
+  },
+  {
+    "type": "LEADERSHIP",
+    "role": "Baltistan Student Council",
+    "org": "GCUF · 2024 and 2025",
+    "summary": "Recognised for teamwork in 2024 and team leadership in 2025.",
+    "image_url": null
+  }
+]

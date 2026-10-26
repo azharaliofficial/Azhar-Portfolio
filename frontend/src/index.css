@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondary-fixed: #dfe2ec;
+  --color-secondary-container: #454951;
+  --color-on-secondary-fixed-variant: #43474f;
+  --color-on-primary-container: #221b00; /* darker than the mockup for readable text on yellow */
+  --color-on-tertiary-container: #00696f;
+  --color-primary: #fff5dc;
+  --color-surface-variant: #343537;
+  --color-error: #ffb4ab;
+  --color-surface-container-highest: #343537;
+  --color-tertiary: #d8fcff;
+  --color-surface-container-high: #292a2c;
+  --color-surface-dim: #121315;
+  --color-primary-fixed-dim: #e9c400;
+  --color-inverse-on-surface: #303033;
+  --color-primary-fixed: #ffe171;
+  --color-surface-bright: #38393b;
+  --color-on-error-container: #ffdad6;
+  --color-on-primary: #3b2f00;
+  --color-surface: #121315;
+  --color-inverse-primary: #705d00;
+  --color-inverse-surface: #e3e2e5;
+  --color-on-tertiary-fixed-variant: #004f53;
+  --color-secondary-fixed-dim: #c3c6d0;
+  --color-background: #121315;
+  --color-on-surface-variant: #d0c6ab;
+  --color-tertiary-container: #00f0fc;
+  --color-on-primary-fixed: #221b00;
+  --color-tertiary-fixed-dim: #00dce7;
+  --color-surface-tint: #e9c400;
+  --color-tertiary-fixed: #70f6ff;
+  --color-on-tertiary-fixed: #002022;
+  --color-on-secondary: #2c3138;
+  --color-on-tertiary: #00373a;
+  --color-outline: #999077;
+  --color-on-primary-fixed-variant: #554600;
+  --color-on-secondary-fixed: #171c23;
+  --color-surface-container-lowest: #0d0e10;
+  --color-on-error: #690005;
+  --color-on-background: #e3e2e5;
+  --color-error-container: #93000a;
+  --color-secondary: #c3c6d0;
+  --color-outline-variant: #4d4632;
+  --color-on-secondary-container: #b5b8c2;
+  --color-surface-container-low: #1b1c1e;
+  --color-primary-container: #ffd60a;
+  --color-on-surface: #e3e2e5;
+  --color-surface-container: #1f2022;
+
+  --spacing-space-xl: 24px;
+  --spacing-margin: 16px;
+  --spacing-space-xs: 4px;
+  --spacing-space-lg: 16px;
+  --spacing-gutter: 12px;
+  --spacing-margin-desktop: 32px;
+  --spacing-space-sm: 8px;
+  --spacing-space-md: 12px;
+  --spacing-gutter-desktop: 16px;
+
+  --font-label-sm: "JetBrains Mono", ui-monospace, monospace;
+  --font-body-lg: "Space Grotesk", system-ui, sans-serif;
+  --font-display-mobile: "Space Grotesk", system-ui, sans-serif;
+  --font-telemetry: "JetBrains Mono", ui-monospace, monospace;
+  --font-headline-lg: "Space Grotesk", system-ui, sans-serif;
+  --font-headline-sm: "Space Grotesk", system-ui, sans-serif;
+  --font-body-sm: "Space Grotesk", system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-label-lg: "JetBrains Mono", ui-monospace, monospace;
+  --font-headline-lg-mobile: "Space Grotesk", system-ui, sans-serif;
+  --font-code-block: "JetBrains Mono", ui-monospace, monospace;
+
+  --text-label-sm: 10px;
+  --text-label-sm--line-height: 12px;
+  --text-label-sm--letter-spacing: 0.08em;
+  --text-label-sm--font-weight: 500;
+  --text-body-lg: 15px;
+  --text-body-lg--line-height: 22px;
+  --text-body-lg--font-weight: 400;
+  --text-display-mobile: 30px;
+  --text-display-mobile--line-height: 34px;
+  --text-display-mobile--letter-spacing: -0.02em;
+  --text-display-mobile--font-weight: 700;
+  --text-telemetry: 9px;
+  --text-telemetry--line-height: 10px;
+  --text-telemetry--letter-spacing: 0.12em;
+  --text-telemetry--font-weight: 700;
+  --text-headline-lg: 28px;
+  --text-headline-lg--line-height: 32px;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 600;
+  --text-headline-sm: 18px;
+  --text-headline-sm--line-height: 22px;
+  --text-headline-sm--letter-spacing: -0.01em;
+  --text-headline-sm--font-weight: 600;
+  --text-body-sm: 13px;
+  --text-body-sm--line-height: 18px;
+  --text-body-sm--font-weight: 400;
+  --text-display: 40px;
+  --text-display--line-height: 44px;
+  --text-display--letter-spacing: -0.03em;
+  --text-display--font-weight: 700;
+  --text-label-lg: 12px;
+  --text-label-lg--line-height: 16px;
+  --text-label-lg--letter-spacing: 0.06em;
+  --text-label-lg--font-weight: 600;
+  --text-headline-lg-mobile: 22px;
+  --text-headline-lg-mobile--line-height: 26px;
+  --text-headline-lg-mobile--letter-spacing: -0.01em;
+  --text-headline-lg-mobile--font-weight: 600;
+  --text-code-block: 12px;
+  --text-code-block--line-height: 18px;
+  --text-code-block--font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 89px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-surface-container-lowest);
+  color: var(--color-primary);
+  font-family: var(--font-body-sm);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 24px blueprint grid behind the page. */
+.blueprint-grid {
+  background-size: 24px 24px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Keep the terminal's scrollbar thin and quiet. */
+.thin-scroll { scrollbar-width: thin; scrollbar-color: #4d4632 transparent; }
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary-container);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-ping, .animate-pulse { animation: none; }
+}

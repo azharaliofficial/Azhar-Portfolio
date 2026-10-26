@@ -1,0 +1,26 @@
+[
+  {
+    "code": "S-01",
+    "title": "Laravel web apps and admin panels",
+    "description": "Business systems like restaurant, event and shop management, with a clean admin to run them.",
+    "stack": "Laravel · PHP · MySQL"
+  },
+  {
+    "code": "S-02",
+    "title": "REST APIs and backend",
+    "description": "Secure, documented APIs with a well designed database behind them.",
+    "stack": "Laravel · MySQL · Sanctum"
+  },
+  {
+    "code": "S-03",
+    "title": "Full-stack web (Laravel + React)",
+    "description": "Responsive websites and dashboards, from the database to the screen.",
+    "stack": "React · Tailwind · Laravel"
+  },
+  {
+    "code": "S-04",
+    "title": "Python automation and data",
+    "description": "Scripts that save time, data dashboards and small AI features.",
+    "stack": "Python · Analytics · AI basics"
+  }
+]

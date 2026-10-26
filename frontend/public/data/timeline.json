@@ -1,0 +1,65 @@
+[
+  {
+    "date_label": "OCT 2022",
+    "title": "Computer Diploma",
+    "description": "Challenger's Computer Skills Centre. Windows, MS Office, typing.",
+    "is_current": false,
+    "image_url": "/storage/timeline/vUuxFu6bzxXR95bF0Pnx9PLfBpGhOD7juMF68HrI.jpg"
+  },
+  {
+    "date_label": "SEP 2024",
+    "title": "BSCS begins",
+    "description": "Government College University Faisalabad, Computer Science.",
+    "is_current": true,
+    "image_url": null
+  },
+  {
+    "date_label": "DEC 2024",
+    "title": "Baltistan Student Council",
+    "description": "First certificate for teamwork and active contribution.",
+    "is_current": false,
+    "image_url": "/storage/timeline/P0zVcCyeqlsfIipMppOazMNiRKGKd6tanLtaIyz4.jpg"
+  },
+  {
+    "date_label": "SEP 2025",
+    "title": "Full-Stack Web Development",
+    "description": "Tech Zone Institute. 3-month program plus a 1-month internship.",
+    "is_current": false,
+    "image_url": "/storage/timeline/m0ZjiV7eDyQ9elT9MyGEKfHGrB7F5bkIHu0itQ3K.jpg"
+  },
+  {
+    "date_label": "DEC 2025",
+    "title": "Team leadership",
+    "description": "Baltistan Student Council GCUF recognises leadership contribution.",
+    "is_current": false,
+    "image_url": "/storage/timeline/8BxmGCHdg2hnJ4eP6psr2I9eNwLfyhcSi0Sb5drf.jpg"
+  },
+  {
+    "date_label": "APR 2026",
+    "title": "Hands-on AI training",
+    "description": "VitaNova International Alliance for Sciences (VNIAS).",
+    "is_current": false,
+    "image_url": "/storage/timeline/kPnlwYjUVvdA7Nc29NNLk5coWxAPvzoTEPHswmiR.jpg"
+  },
+  {
+    "date_label": "APR - JUL 2026",
+    "title": "DigiSkills program",
+    "description": "Data Analytics and Bussiness Intelligence.",
+    "is_current": false,
+    "image_url": "/storage/timeline/oF2A9tDMnE6kZJ1YFqYEw2Sou4ALnM0DwRZAz4n9.jpg"
+  },
+  {
+    "date_label": "APR -JUL 2026",
+    "title": "DigiSkills program",
+    "description": "Artificial Intelligence Using Python",
+    "is_current": false,
+    "image_url": "/storage/timeline/6N3oXKAPJwia1K26K3RDKQvXof1ng8rxXFSQn7UM.jpg"
+  },
+  {
+    "date_label": "NOW",
+    "title": "CodeAlpha backend internship",
+    "description": "Restaurant Management.",
+    "is_current": true,
+    "image_url": null
+  }
+]

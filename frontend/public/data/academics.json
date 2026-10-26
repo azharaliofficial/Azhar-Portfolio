@@ -1,0 +1,26 @@
+[
+  {
+    "position": "tl",
+    "kind": "DIPLOMA           2022",
+    "title": "Computer Diploma",
+    "subtitle": "Challenger's Computer "
+  },
+  {
+    "position": "tr",
+    "kind": "EDUCATION · 2024 - 2028",
+    "title": "BSCS, Computer Science",
+    "subtitle": "GCU Faisalabad"
+  },
+  {
+    "position": "bl",
+    "kind": "TRAINING · 2025",
+    "title": "Full-Stack Web Development",
+    "subtitle": "Tech Zone Institute"
+  },
+  {
+    "position": "br",
+    "kind": "CERTIFIED · 2026",
+    "title": "AI and Data Analytics",
+    "subtitle": "DigiSkills.pk, VitaNova"
+  }
+]

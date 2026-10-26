@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Laravel",
+    "level": 70,
+    "group": "Backend"
+  },
+  {
+    "name": "PHP",
+    "level": 70,
+    "group": "Backend"
+  },
+  {
+    "name": "HTML, CSS and Tailwind",
+    "level": 70,
+    "group": "Frontend"
+  },
+  {
+    "name": "MySQL",
+    "level": 65,
+    "group": "Database"
+  },
+  {
+    "name": "Python",
+    "level": 65,
+    "group": "Backend"
+  },
+  {
+    "name": "JavaScript",
+    "level": 60,
+    "group": "Frontend"
+  },
+  {
+    "name": "C++ and OOP",
+    "level": 30,
+    "group": "Core"
+  },
+  {
+    "name": "React",
+    "level": 50,
+    "group": "Frontend"
+  },
+  {
+    "name": "Data Analytics and BI",
+    "level": 55,
+    "group": "Data"
+  }
+]
